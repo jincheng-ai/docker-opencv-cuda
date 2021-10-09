@@ -1,6 +1,6 @@
 FROM nvidia/cudagl:10.2-devel-ubuntu18.04
 
-RUN export http_proxy="http://10.1.80.160:7890" && export https_proxy="http://10.1.80.160:7890"
+# RUN export http_proxy="http://10.1.80.160:7890" && export https_proxy="http://10.1.80.160:7890"
 
 RUN apt-get update && apt-get remove -y x264 libx264-dev
 RUN apt-get update && apt-get upgrade -y && apt-get install -y sudo clang-format wget apt-utils libcudnn7 libcudnn7-dev
